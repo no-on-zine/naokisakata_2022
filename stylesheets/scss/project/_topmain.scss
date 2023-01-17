@@ -18,6 +18,11 @@ section#top_main {
             background: url('#{$rd}top/score_01.jpg')50% 50%/200%;
             height: 100vh;
             width: 100%;
+            @include tr;
+
+            @include dm {
+                @include f($g:0.3);
+            }
 
             @include mq {
                 background-attachment: fixed;

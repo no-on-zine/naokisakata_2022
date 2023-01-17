@@ -6,3 +6,11 @@
     justify-content: $jc;
     align-items: $ai;
 }
+
+@mixin tr {
+    transition: .5s;
+}
+
+@mixin f($i:1, $g:0) {
+    filter: invert($i) grayscale($g);
+}

@@ -99,6 +99,11 @@ header {
             a {
                 display: flex;
                 width: clamp(180px, 30vw, 300px);
+                @include tr;
+
+                @include dm {
+                    @include f;
+                }
             }
         }
     }
@@ -112,6 +117,11 @@ header {
         position: fixed;
         background: #fff;
         width: 100%;
+        @include tr;
+
+        @include dm {
+            background: $bg_d_2+e6;
+        }
 
         @include mq {
             height: 7.5rem;
@@ -129,6 +139,11 @@ header {
             font-size: 1.4rem;
             color: #aaa;
             letter-spacing: 0.1rem;
+            @include tr;
+
+            @include dm {
+                color: $tx_d_2;
+            }
 
             @include mq {
                 gap: 2rem;

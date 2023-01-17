@@ -12,6 +12,11 @@ body {
     word-wrap: break-word;
     line-height: 1.4;
     font-size: 1.6rem;
+    @include tr;
+
+    @include dm {
+        background: $bg_d_2;
+    }
 
     @include mq {
         font-size: 1.8rem;
